@@ -1,0 +1,18 @@
+@import 'vars';
+@import 'mixins';
+
+/*
+	Highlights by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/* Loader */
+
+	html {
+		body {
+			&:before, &:after {
+				display: none !important;
+			}
+		}
+	}
