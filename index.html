@@ -61,7 +61,7 @@
 						<ul class="icons-grid">
 							<li>
 								<span class="icon major fa-stethoscope"></span>
-								<h3>Doctor</h3>
+								<h3>Physician</h3>
 							</li>
 							<li>
 								<span class="icon major fa-money"></span>
@@ -72,8 +72,8 @@
 								<h3>Website Designer</h3>
 							</li>
 							<li>
-								<span class="icon major fa-camera-retro"></span>
-								<h3>Photographer</h3>
+								<span class="icon major fa-bar-chart"></span>
+								<h3>Strategist</h3>
 							</li>
 						</ul>
 					</div>
@@ -101,21 +101,12 @@
 					<header class="major">
 						<h2>Get in touch</h2>
 					</header>
-					<form method="post" role="form" action="sendmessage.php">
-						<input type="hidden" value="Shrawan.patel@doctors.net.uk" name="send_to" />
-   						<input type="hidden" value="Shrawanpatel.com" name="send_from" />
-  			 			<input type="hidden" value="Thankyou.html" name="redirect" />
-						<div class="row uniform">
-							<div class="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
-							<div class="6u$ 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
-							<div class="12u$"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-							<div class="12u$">
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" class="special" /></li>
-								</ul>
-							</div>
-						</div>
-					</form>
+					<form method="post" action="https://formspree.io/shrawan.patel@doctors.net.uk">
+  						<div class="6u 12u$(xsmall)"> <input type="text" name="name" id="name" placeholder="Your name"/> </div>
+  						<div class="6u$ 12u$(xsmall)"> <input type="email" name="email" placeholder="Your email"> </div>
+  						<div class="12u$"> <textarea name="message" placeholder="Your message" rows="4"> </textarea>
+  						<div class="12u$"> <button type="submit">Send</button> </div>
+					</form>	
 				</div>
 				<footer>
 					<ul class="icons">
