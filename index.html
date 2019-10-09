@@ -82,7 +82,7 @@
     <div class="container">
       <div class="content-section-heading text-center">
         <h4 class="mb-3">Speaking</h4>
-        <p class="mb-5">I love to discuss innovation in health technology and its application in a real world setting to improve the lives of patients. What works, what doesn't work, and how we continue taking strides foward. Feel free to <a href="#contact" class="text-white" style="text-decoration: underline;">reach out to me </a> if I might be a good fit for your event.</p>
+        <p class="mb-5">I love to discuss innovation in health technology and its application in a real world setting to improve the lives of patients. What works, what doesn't work, and how we continue to take strides foward. Feel free to <a href="#contact" class="text-white" style="text-decoration: underline;">reach out to me </a> if I might be a good fit for your event.</p>
       </div>
       <div class="row">
         <div class="col-lg-12 col-md-12 mb-3">
@@ -197,23 +197,20 @@
 
   <!-- contact -->
   <section class="content-section bg-primary text-white" id="contact">
-
-
-        <div class="container text-center">
-        <h4 class="mb-4">Contact Me</h4>
-          <form method="post" role="form" action="sendmessage.php">
-            <input type="hidden" value="Shrawan.patel@doctors.net.uk" name="send_to" />
-              <input type="hidden" value="Shrawanpatel.com" name="send_from" />
-              <input type="hidden" value="Thankyou.html" name="redirect" />
-            <div class="row">
-              <div class="col-lg-6 col-sm-12 mb-2"><input class="col-lg-12" type="text" name="name" id="name" placeholder="Name" /></div>
-              <div class="col-lg-6 col-sm-12 mb-2"><input class="col-lg-12" type="email" name="email" id="email" placeholder="Email" /></div>
-              <div class="col-lg-12 mb-4"><textarea class="col-lg-12" name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-              <div style="margin-right: auto; margin-left: auto">
-              <button type="submit" value="Send Message" class="btn btn-xl btn-light mr-4">Send</button>
-            </div>
-            </div>
-          </form>
+        <div class="container">
+        <h4 class="mb-4 text-center">Contact Me</h4>
+          <form name="input" method="POST" action="https://formspree.io/shrawan.patel@doctors.net.uk">
+          	<div class="row">
+	            <div class="col-lg-6 col-sm-12 mb-2"> Name: <input class="col-lg-12" type="text" name="Name" placeholder="Your Name"></div>
+	            <div class="col-lg-6 col-sm-12 mb-2"> Email: <input class="col-lg-12" type="email" name="_replyto" placeholder="Your Email"></div>
+	            <div class="col-lg-12 mb-4"> Message: <textarea class="col-lg-12" name="message" placeholder="Type your message"></textarea></div>
+            	<div style="margin-right: auto; margin-left: auto">
+	            	<input class="btn btn-xl btn-light mr-4" type="submit" value="Send">
+	            	<input type="hidden" name="subject" value="Message from shrawanpatel.com">
+	            	<input type="hidden" name="_next" value="thankyou.html">
+            	</div>
+			</div>
+		  </form>
         </div>
   </section>
 
